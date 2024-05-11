@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* CSS HEX */
+  --walnut-brown: #605541ff;
+  --black-bean: #380507ff;
+  --chocolate-cosmos: #661621ff;
+  --dim-gray: #635e69ff;
+  --rose-quartz: #a9a3abff;
+  --licorice: #281e1dff;
+  --liver: #66483fff;
+  --raisin-black: #282a39ff;
+
+  /* CSS HSL */
+  --walnut-brown: hsla(39, 19%, 32%, 1);
+  --black-bean: hsla(358, 84%, 12%, 1);
+  --chocolate-cosmos: hsla(352, 65%, 24%, 1);
+  --dim-gray: hsla(267, 6%, 39%, 1);
+  --rose-quartz: hsla(285, 5%, 65%, 1);
+  --licorice: hsla(5, 16%, 14%, 1);
+  --liver: hsla(14, 24%, 32%, 1);
+  --raisin-black: hsla(233, 18%, 19%, 1);
+}
+
+body {
+  font-family: 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
+  background-color: var(--rose-quartz);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 4px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.add-todo {
+  max-width: 800px;
+  background-color: burlywood;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: var(--chocolate-cosmos);
+  border: 1px solid var(--black-bean);
+  border-radius: 4px;
+  color: var(--rose-quartz);
+  cursor: pointer;
+  font-size: 16px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.container {
+  width: 700px;
+  align-items: center;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.input {
+  background-color: #fff;
+  border: 1px solid var(--raisin-black);
+  border-radius: 4px;
+  height: 24px;
+  width: 425px;
+}
