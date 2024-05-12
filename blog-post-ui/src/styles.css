@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* CSS HEX */
+  --dark-magenta: #8c2a85ff;
+  --licorice: #180214ff;
+  --mimi-pink: #fcd9f6ff;
+  --fandango: #ce32a6ff;
+  --sky-magenta: #d289bbff;
+  --china-rose: #a76288ff;
+  --chamoisee: #8d785fff;
+
+  /* CSS HSL */
+  --dark-magenta: hsla(304, 54%, 36%, 1);
+  --licorice: hsla(311, 85%, 5%, 1);
+  --mimi-pink: hsla(310, 85%, 92%, 1);
+  --fandango: hsla(315, 61%, 50%, 1);
+  --sky-magenta: hsla(319, 45%, 68%, 1);
+  --china-rose: hsla(327, 28%, 52%, 1);
+  --chamoisee: hsla(33, 19%, 46%, 1);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-color: var(--sky-magenta);
+  color: var(--licorice);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 4px 0;
+}
+
+p {
+  line-height: 12px;
+}
+
+input {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--dark-magenta);
+  height: 24px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--dark-magenta);
+}
+
+.description {
+  border-radius: 4px;
+  border: 1px solid var(--dark-magenta);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  line-height: 20px;
+  scroll-behavior: smooth;
+  width: 400px;
+}
+
+.content {
+  border-radius: 4px;
+  border: 1px solid var(--dark-magenta);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  line-height: 20px;
+  scroll-behavior: smooth;
+}
+
+.frontmatter {
+  background-color: var(--mimi-pink);
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: 1px 1px 0px 1px solid var(--fandango);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  width: 790px;
+}
+
+.post-content {
+  background-color: var(--mimi-pink);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  white-space: pre-wrap;
+  width: 790px;
+}

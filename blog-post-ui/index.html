@@ -2,18 +2,92 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.2/feather.min.js"
-      integrity="sha512-zMm7+ZQ8AZr1r3W8Z8lDATkH05QG5Gm2xc6MlsCdBz9l6oE8Y7IXByMgSm/rdRQrhuHt99HAYfMljBOEZ68q5A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <title></title>
   </head>
   <body>
     <main id="app">
-      <div class="container"></div>
+      <h1>{{ pageTitle }}</h1>
+      <div class="container">
+        <form @submit.prevent="addFrontMatter">
+          <ul>
+            <li>
+              <label for="date">Date:</label>
+              <input
+                v-model="date"
+                class="input"
+                type="date"
+                name="date"
+                id="date"
+              />
+            </li>
+            <li>
+              <label for="postTitle">Post Title:</label>
+              <input
+                v-model="postTitle"
+                class="input"
+                type="text"
+                name="postTitle"
+                id="postTitle"
+                value=""
+              />
+            </li>
+            <li>
+              <label for="description">Description:</label><br />
+              <textarea
+                v-model="description"
+                class="input description"
+                type="text"
+                name="description"
+                id="description"
+              ></textarea>
+            </li>
+            <li>
+              <label for="tags">Tags:</label>
+              <input
+                v-model="tags"
+                class="input"
+                type="text"
+                name="tags"
+                id="tags"
+              />
+            </li>
+            <li>
+              <label for="layout">Layout:</label>
+              <input
+                v-model="layout"
+                class="input"
+                type="text"
+                name="layout"
+                id="layout"
+              />
+            </li>
+            <li>
+              <label for="content">Content:</label><br />
+              <textarea
+                rows="10"
+                cols="92"
+                v-model="content"
+                class="input content"
+                type="text"
+                name="content"
+                id="content"
+              ></textarea>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="frontmatter">
+        <p>---</p>
+        <p>date: {{date}}</p>
+        <p>title: {{postTitle}}</p>
+        <p>description: {{description}}</p>
+        <p>tags: {{tags}}</p>
+        <p>layout: {{layout}}</p>
+        <p>---</p>
+      </div>
+      <div class="post-content">{{content}}</div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="app.js" charset="utf-8"></script>

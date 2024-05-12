@@ -1,7 +1,24 @@
 const app = new Vue({
   el: '#app',
   data: {
-    title: '',
+    pageTitle: `Natalie's 11ty Blog Post Generator`,
+    date: '',
+    postTitle: '',
+    description: '',
+    tags: '',
+    layout: '',
+    content: '',
   },
-  methods: {},
+  methods: {
+    addFrontMatter() {
+      this.frontMatter.push({
+        date: this.date,
+        postTitle: this.postTitle,
+        description: this.description,
+        tags: this.tags,
+        layout: this.layout,
+        content: this.content,
+      });
+    },
+  },
 });
