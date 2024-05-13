@@ -1,11 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+:root {
+  /* CSS HEX */
+  --atomic-tangerine: #f49666ff;
+  --persimmon: #ef611bff;
+  --russet: #93491dff;
+  --caf-noir: #4b351eff;
+  --moss-green: #989072ff;
+  --beige: #e5eac5ff;
+  --sage: #bcc299ff;
+  --sage-2: #a8b68cff;
+  --reseda-green: #7d8161ff;
+  --smoky-black: #090804ff;
 
+  /* CSS HSL */
+  --atomic-tangerine: hsla(20, 87%, 68%, 1);
+  --persimmon: hsla(20, 87%, 52%, 1);
+  --russet: hsla(22, 67%, 35%, 1);
+  --caf-noir: hsla(31, 43%, 21%, 1);
+  --moss-green: hsla(47, 16%, 52%, 1);
+  --beige: hsla(68, 47%, 85%, 1);
+  --sage: hsla(69, 25%, 68%, 1);
+  --sage-2: hsla(80, 22%, 63%, 1);
+  --reseda-green: hsla(68, 14%, 44%, 1);
+  --smoky-black: hsla(48, 38%, 3%, 1);
+}
 * {
   box-sizing: border-box;
 }
 
 body {
   align-items: center;
+  background-color: var(--reseda-green);
   display: flex;
   flex-direction: column;
   font-family: 'Noto Sans', sans-serif;
@@ -13,4 +38,11 @@ body {
   justify-content: center;
   margin: 0;
   overflow: hidden;
+}
+
+img {
+  top: 10px;
+}
+
+.card {
 }
