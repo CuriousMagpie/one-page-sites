@@ -45,4 +45,5 @@ img {
 }
 
 .card {
+  background-color: var(--beige);
 }
