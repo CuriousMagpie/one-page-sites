@@ -1,7 +1,7 @@
 const app = new Vue({
   el: '#app',
   data: {
-    title: '',
+    title: `A Fan Site`,
   },
   methods: {},
 });

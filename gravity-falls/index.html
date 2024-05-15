@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css"
+      type="text/css"
+    />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.2/feather.min.js"
       integrity="sha512-zMm7+ZQ8AZr1r3W8Z8lDATkH05QG5Gm2xc6MlsCdBz9l6oE8Y7IXByMgSm/rdRQrhuHt99HAYfMljBOEZ68q5A=="
@@ -13,9 +18,34 @@
   </head>
   <body>
     <main id="app">
-      <div class="container"></div>
+      <header><img src="images/gravity-falls-logo.png" /></header>
+      <h1>{{ title }}</h1>
+      <div class="card">
+        <img src="images/dipper-pines.png" width="300px" />
+        <p class="name">Dipper Pines</p>
+      </div>
+      <div class="card">
+        <img src="images/mabel-pines.png" width="300px" />
+        <p class="name">Mabel Pines</p>
+      </div>
+      <div class="card">
+        <img src="images/stan-pines.png" width="300px" />
+        <p class="name box">Stan Pines</p>
+      </div>
+      <div class="card">
+        <img src="images/soos-ramirez.png" width="300px" />
+        <p class="name">Soos Ramirez</p>
+      </div>
+      <div class="card">
+        <img src="images/wendy-corduroy.png" width="300px" />
+        <p class="name">Wendy Corduroy</p>
+      </div>
+      <div class="card">
+        <img src="images/bill-cipher.png" width="300px" />
+        <p class="name">Bill Cipher</p>
+      </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="app.js" charset="utf-8"></script>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js" charset="utf-8"></script>
 </html>
